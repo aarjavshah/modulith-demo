@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: modulith-demo
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost/mydb
+    password: root
+  sql:
+    init:
+      mode: always
+
+  modulith:
+    republish-outstanding-events-on-restart: false
+    events:
+      jdbc:
+        schema-initialization:
+          enabled: true

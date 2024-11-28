@@ -1,0 +1,23 @@
+= CarDealerUtrecht.com documentation
+:modulith-docs: ../../../target/spring-modulith-docs
+
+== Overview
+
+plantuml::{modulith-docs}/components.puml[format="svg"]
+
+== Car
+
+plantuml::{modulith-docs}/module-car.puml[format="svg"]
+include::{modulith-docs}/module-car.adoc[]
+
+== Invoice
+plantuml::{modulith-docs}/module-invoice.puml[format="svg"]
+include::{modulith-docs}/module-invoice.adoc[]
+
+== Service
+plantuml::{modulith-docs}/module-service.puml[format="svg"]
+include::{modulith-docs}/module-service.adoc[]
+
+== Notification
+plantuml::{modulith-docs}/module-notification.puml[format="svg"]
+include::{modulith-docs}/module-notification.adoc[]
