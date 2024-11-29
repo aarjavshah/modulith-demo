@@ -10,7 +10,7 @@ CREATE TABLE Car (
     status VARCHAR(50) NOT NULL
 );
 
-INSERT INTO Car (id, brand, model, description, registration, mileage, cost, status) VALUES
+INSERT INTO car (id, brand, model, description, registration, mileage, cost, status) VALUES
 (1, 'Toyota', 'Camry', 'A reliable and fuel-efficient car', 2020, 15000, 25000.00, 'Available'),
 (2, 'Toyota', 'Corolla', 'A compact and efficient car', 2019, 20000, 22000.00, 'Available'),
 (3, 'Toyota', 'RAV4', 'A versatile and spacious SUV', 2021, 10000, 30000.00, 'Available'),

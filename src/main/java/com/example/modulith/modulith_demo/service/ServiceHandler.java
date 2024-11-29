@@ -17,7 +17,7 @@ public class ServiceHandler {
   @ApplicationModuleListener
   void handleCarService(CarSaleEvent carSaleEvent) throws InterruptedException {
     log.info("Inside ServiceHandler with garage for {}", carSaleEvent.brandName());
-    Thread.sleep(5000);
+    Thread.sleep(10000);
     log.info("Finished servicing {} car with id {}", carSaleEvent.brandName(), carSaleEvent.carId());
     applicationEventPublisher.publishEvent(new CarServiceCompletedEvent(carSaleEvent.carId()));
   }

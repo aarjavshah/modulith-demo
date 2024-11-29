@@ -22,7 +22,7 @@ public class CarController {
 
 
   @PutMapping("/cars/{carId}")
-  Car purchaseCar(@PathVariable("carId") Long carId, @RequestBody Car car) {
+  Car purchaseCar(@PathVariable("carId") Long carId, @RequestBody Car car) throws InterruptedException {
     return carService.purchaseCar(carId, car);
   }
 }

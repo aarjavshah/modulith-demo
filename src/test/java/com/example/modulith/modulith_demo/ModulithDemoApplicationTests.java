@@ -13,4 +13,9 @@ class ModulithDemoApplicationTests {
   void generateDocumentation() {
     new Documenter(modules).writeDocumentation();
   }
+
+  @Test
+  void verifiesModularStructure() {
+    modules.verify();
+  }
 }

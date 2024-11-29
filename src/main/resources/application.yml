@@ -1,4 +1,10 @@
 spring:
+  kafka:
+    producer:
+      acks: -1
+      bootstrap-servers: localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   application:
     name: modulith-demo
   datasource:
@@ -11,8 +17,8 @@ spring:
       mode: always
 
   modulith:
-    republish-outstanding-events-on-restart: false
     events:
       jdbc:
         schema-initialization:
           enabled: true
+      republish-outstanding-events-on-restart: true
