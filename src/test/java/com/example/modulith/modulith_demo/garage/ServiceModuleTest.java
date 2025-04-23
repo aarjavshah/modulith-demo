@@ -1,4 +1,4 @@
-package com.example.modulith.modulith_demo.service;
+package com.example.modulith.modulith_demo.garage;
 
 import com.example.modulith.modulith_demo.car.CarSaleEvent;
 import org.junit.jupiter.api.Test;
@@ -14,10 +14,10 @@ class ServiceModuleTest {
 
     @Test
     void testServiceHandler(Scenario scenario) {
-        var carServiceCompletedEvent = new CarServiceCompletedEvent(1L);
+        var carMaintenanceCompletedEvent = new CarMaintenanceCompletedEvent(1L);
         scenario.publish(new CarSaleEvent(1L, "BMW", BigDecimal.ONE))
-                .andWaitForEventOfType(CarServiceCompletedEvent.class)
-                .toArriveAndVerify(event -> assertEquals(carServiceCompletedEvent, event));
+                .andWaitForEventOfType(CarMaintenanceCompletedEvent.class)
+                .toArriveAndVerify(event -> assertEquals(carMaintenanceCompletedEvent, event));
     }
 
 }

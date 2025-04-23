@@ -1,4 +1,4 @@
-package com.example.modulith.modulith_demo.service;
+package com.example.modulith.modulith_demo.garage;
 
 import com.example.modulith.modulith_demo.car.CarSaleEvent;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +19,6 @@ public class ServiceHandler {
     log.info("Inside ServiceHandler with garage for {}", carSaleEvent.brandName());
     Thread.sleep(10000);
     log.info("Finished servicing {} car with id {}", carSaleEvent.brandName(), carSaleEvent.carId());
-    applicationEventPublisher.publishEvent(new CarServiceCompletedEvent(carSaleEvent.carId()));
+    applicationEventPublisher.publishEvent(new CarMaintenanceCompletedEvent(carSaleEvent.carId()));
   }
 }

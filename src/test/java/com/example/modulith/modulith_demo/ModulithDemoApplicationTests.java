@@ -11,6 +11,7 @@ class ModulithDemoApplicationTests {
 
   @Test
   void generateDocumentation() {
+    System.out.println(modules);
     new Documenter(modules).writeDocumentation();
   }
 

@@ -22,4 +22,4 @@ spring:
         schema-initialization:
           enabled: true
       republish-outstanding-events-on-restart: true
-    detection-strategy: com.example.modulith.modulith_demo.CustomStrategy
+#    detection-strategy: com.example.modulith.modulith_demo.CustomStrategy

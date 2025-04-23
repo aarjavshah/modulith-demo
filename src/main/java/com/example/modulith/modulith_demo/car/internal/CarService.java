@@ -1,6 +1,8 @@
-package com.example.modulith.modulith_demo.car;
+package com.example.modulith.modulith_demo.car.internal;
 
 import java.util.List;
+
+import com.example.modulith.modulith_demo.car.CarSaleEvent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;

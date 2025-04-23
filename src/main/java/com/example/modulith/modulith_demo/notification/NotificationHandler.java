@@ -1,7 +1,7 @@
 package com.example.modulith.modulith_demo.notification;
 
 import com.example.modulith.modulith_demo.invoice.InvoiceCreatedEvent;
-import com.example.modulith.modulith_demo.service.CarServiceCompletedEvent;
+import com.example.modulith.modulith_demo.garage.CarMaintenanceCompletedEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.modulith.events.ApplicationModuleListener;
@@ -13,9 +13,9 @@ import org.springframework.stereotype.Component;
 public class NotificationHandler {
 
   @ApplicationModuleListener
-  void handleNotifications(CarServiceCompletedEvent carServiceCompletedEvent) {
+  void handleNotifications(CarMaintenanceCompletedEvent carMaintenanceCompletedEvent) {
     log.info(
-        "Inside NotificationModule for notifying for car service completed {}", carServiceCompletedEvent);
+        "Inside NotificationModule for notifying for car service completed {}", carMaintenanceCompletedEvent);
     log.info(
         "Your car is ready for pickup. Please don't forget to pay the invoice for smooth delivery.");
   }

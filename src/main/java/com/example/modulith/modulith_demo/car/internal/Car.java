@@ -1,4 +1,4 @@
-package com.example.modulith.modulith_demo.car;
+package com.example.modulith.modulith_demo.car.internal;
 
 import org.springframework.data.annotation.Id;
 
